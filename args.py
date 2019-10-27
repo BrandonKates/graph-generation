@@ -20,12 +20,12 @@ class Args():
         ### Which dataset is used to train the model
         # self.graph_type = 'DD'
         # self.graph_type = 'caveman'
-        # self.graph_type = 'caveman_small'
+        #self.graph_type = 'caveman_small'
         # self.graph_type = 'caveman_small_single'
-        # self.graph_type = 'community4'
-        self.graph_type = 'grid'
+        self.graph_type = 'community4'
+        #self.graph_type = 'grid'
         # self.graph_type = 'grid_small'
-        # self.graph_type = 'ladder_small'
+        #self.graph_type = 'ladder_small'
 
         # self.graph_type = 'enzymes'
         # self.graph_type = 'enzymes_small'
@@ -41,7 +41,7 @@ class Args():
         #     self.graph_type = self.graph_type+str(self.noise)
 
         # if none, then auto calculate
-        self.max_num_node = None # max number of nodes in a graph
+        self.max_num_node = 10 # max number of nodes in a graph
         self.max_prev_node = None # max previous node that looks back
 
         ### network config

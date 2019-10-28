@@ -149,7 +149,6 @@ def create(args):
         shuffle(graphs)
         graphs = graphs[0:200]
         args.max_prev_node = 15
-
     return graphs
 
 

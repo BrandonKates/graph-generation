@@ -34,7 +34,7 @@ def create(args):
 
 	elif args.graph_type == 'random_geometric_graph':
 		for i in range(args.num_graphs):
-			G = nx.generators.geometric.random_geometric_graph(args.num_nodes, 2, 2)
+			G = nx.random_geometric_graph(args.num_nodes, 2, 2)
 			pos = nx.random_layout(G)
 			positions = np.array([pos[n] for n in pos])
 			G.add_weighted_edges_from(get_distances(positions, args.num_nodes))
